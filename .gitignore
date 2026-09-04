@@ -1,0 +1,12 @@
+# Local browser QA artifacts
+qa/
+
+# Internal research notes are not part of the public website
+research/
+competitive-analysis.html
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
