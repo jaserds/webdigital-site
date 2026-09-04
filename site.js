@@ -121,7 +121,9 @@
     let stackFrame = 0;
     const updateStack = () => {
       const frontTop = stackFront.getBoundingClientRect().top;
-      const progress = Math.min(1, Math.max(0, (innerHeight - frontTop) / innerHeight));
+      const mobile = innerWidth <= 640;
+      const activationLine = innerHeight * (mobile ? .64 : 1);
+      const progress = Math.min(1, Math.max(0, (activationLine - frontTop) / activationLine));
       stack.style.setProperty('--stack-progress', progress.toFixed(3));
       stackFrame = 0;
     };
