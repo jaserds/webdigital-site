@@ -15,7 +15,6 @@
   }
 
   if (!reduced && matchMedia('(pointer:fine)').matches) {
-    const dot = document.querySelector('.cursor-dot');
     let pointerFrame = 0;
     let pointerX = 0;
     let pointerY = 0;
@@ -24,16 +23,10 @@
       pointerY = event.clientY;
       if (pointerFrame) return;
       pointerFrame = requestAnimationFrame(() => {
-        dot.style.left = `${pointerX}px`;
-        dot.style.top = `${pointerY}px`;
         document.documentElement.style.setProperty('--mx', `${(pointerX / innerWidth - .5) * 18}px`);
         document.documentElement.style.setProperty('--my', `${(pointerY / innerHeight - .5) * 18}px`);
         pointerFrame = 0;
       });
-    });
-    document.querySelectorAll('a,button,label').forEach((item) => {
-      item.addEventListener('mouseenter', () => dot.classList.add('active'));
-      item.addEventListener('mouseleave', () => dot.classList.remove('active'));
     });
   }
 
