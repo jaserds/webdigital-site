@@ -1,5 +1,6 @@
 # Local browser QA artifacts
 qa/
+output/
 
 # Internal research notes are not part of the public website
 research/

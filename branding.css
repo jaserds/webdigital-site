@@ -1,0 +1,50 @@
+:root { --brand-red: #ff3048; --brand-dark: #101114; --brand-line: rgba(255,255,255,.14); }
+.dpw-header { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.dpw-header-brand { display:flex; flex:0 0 auto; line-height:1; }
+.dpw-header-brand img { display:block; width:auto; height:36px; }
+.dpw-header .dpw-socials { flex:0 0 auto; margin-left:auto; }
+.dpw-header nav { margin-left:0; }
+.dpw-header.header { position:relative; }
+@media(min-width:1101px) {
+ .dpw-header nav { position:absolute; left:50%; transform:translateX(-50%); }
+}
+@media(min-width:1101px) and (max-width:1250px) {
+ .dpw-header { gap:12px; }
+ .dpw-header .dpw-social { width:32px; flex-basis:32px; padding:7px; }
+ .dpw-header .outline-cta,.dpw-header .nav-cta,.dpw-header .header-cta { font-size:10px; }
+}
+.dpw-header.header { padding:0 20px; background:var(--brand-dark); color:#fafafa; border-radius:0 0 18px 18px; }
+.dpw-header.header .nav { color:#e5e5e8; gap:20px; }
+.dpw-header.header .header-cta span { background:#fafafa; color:#101114; }
+.dpw-socials { display:flex; align-items:center; gap:6px; }
+.dpw-social { display:inline-flex; align-items:center; justify-content:center; flex:0 0 36px; width:36px; height:36px; margin:0; padding:8px; border:1px solid var(--brand-line); border-radius:10px; color:#fafafa; background:rgba(255,255,255,.04); line-height:1; text-decoration:none; transition:background .18s,border-color .18s; }
+.dpw-social svg { width:20px; height:20px; display:block; fill:currentColor; }
+.dpw-social img { width:20px; height:20px; display:block; }
+.dpw-social[aria-disabled="true"] img { opacity:.74; }
+a.dpw-social:hover { color:#fff; background:var(--brand-red); border-color:var(--brand-red); transform:none; }
+.dpw-social[aria-disabled="true"] { cursor:default; color:#b8b8bd; }
+.dpw-social:focus-visible, .dpw-header-brand:focus-visible { outline:2px solid var(--brand-red); outline-offset:4px; }
+footer.dpw-footer { display:grid; grid-template-columns:minmax(260px,1.3fr) minmax(240px,1fr) auto; align-items:start; gap:36px; width:100%; max-width:none; margin:0; padding:56px clamp(24px,4vw,64px) 24px; background:var(--brand-dark); color:#fafafa; border-top:1px solid var(--brand-line); font-family:Arial,sans-serif; }
+footer.dpw-footer>div { display:flex; flex-direction:column; align-items:flex-start; gap:12px; }
+.dpw-full-logo { display:block; width:280px; max-width:100%; height:auto; }
+footer.dpw-footer p { margin:8px 0 0; color:#b8b8bd; font-size:14px; line-height:1.6; }
+footer.dpw-footer a { font-size:15px; color:#fafafa; text-decoration:none; text-transform:none; letter-spacing:normal; }
+footer.dpw-footer a:hover { color:#ff3048; }
+footer.dpw-footer .dpw-phone { font-size:22px; font-weight:700; white-space:nowrap; margin-bottom:4px; }
+footer.dpw-footer .dpw-footer-connect>span { font-size:13px; color:#b8b8bd; }
+footer.dpw-footer .dpw-socials { display:flex; flex-direction:row; gap:8px; }
+footer.dpw-footer .dpw-social:hover { color:#fff; }
+footer.dpw-footer .dpw-copyright { grid-column:1/-1; display:block; width:100%; padding-top:20px; border-top:1px solid var(--brand-line); color:#b8b8bd; font-size:12px; }
+@media(max-width:1100px) { .dpw-header nav { display:none; } .dpw-header .dpw-socials { margin-left:auto; } footer.dpw-footer { grid-template-columns:1fr 1fr; } }
+@media(max-width:640px) {
+ .dpw-header { gap:8px; }
+ .dpw-header-brand img { height:26px; }
+ .dpw-header .dpw-social { width:30px; height:32px; flex-basis:30px; padding:6px; border-radius:8px; }
+ .dpw-header .dpw-socials { gap:4px; }
+ .dpw-header.header { padding:0 12px; width:calc(100% - 24px); height:64px; }
+ .dpw-header .outline-cta,.dpw-header .header-cta,.dpw-header .nav-cta { display:flex; flex:0 0 32px; align-items:center; justify-content:center; width:32px; height:32px; padding:0; font-size:0; background:#fafafa; color:#101114; border-radius:9px; }
+ .dpw-header .outline-cta span,.dpw-header .header-cta span { display:none; }
+ .dpw-header .outline-cta:after,.dpw-header .header-cta:after,.dpw-header .nav-cta:after { content:'↗'; font-size:18px; }
+ footer.dpw-footer { grid-template-columns:1fr; gap:30px; padding:40px 24px 24px; }
+ .dpw-full-logo { width:260px; }
+}

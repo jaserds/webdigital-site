@@ -49,6 +49,8 @@ a, button, label { -webkit-tap-highlight-color: transparent; }
   z-index: 50;
 }
 .brand { font-size: 17px; letter-spacing: -.065em; }
+.brand-logo { display: block; width: auto; height: 36px; flex-shrink: 0; }
+footer .brand-logo { height: 40px; }
 .brand i { width: 8px; height: 8px; box-shadow: 0 0 0 5px var(--accent-soft); }
 .topbar nav { gap: 6px; padding: 5px; border: 1px solid rgba(255,255,255,.07); border-radius: 12px; background: rgba(255,255,255,.035); }
 .topbar nav a { padding: 8px 12px; border-radius: 8px; color: var(--text-secondary); transition: color .2s, background .2s; }
@@ -310,6 +312,7 @@ footer { padding: 48px var(--section-x) 28px; border-color: var(--line-dark); ba
   html { scroll-padding-top: 84px; }
   .topbar { top: 10px; left: 12px; width: calc(100% - 24px); height: 58px; padding: 0 8px 0 15px; border-radius: 15px; }
   .brand { font-size: 15px; }
+  .topbar .brand-logo { height: 30px; }
   .outline-cta { width: 42px; height: 42px; display: grid; place-items: center; padding: 0; border-radius: 11px; }
   .hero { min-height: 740px; padding: 106px 20px 38px; justify-content: flex-start; }
   .hero:before { display: none; }
