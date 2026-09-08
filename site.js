@@ -31,15 +31,15 @@
   }
 
   const projects = {
-    kora: {
-      meta: 'Интернет-магазин · 2026',
-      title: 'KORA<br>RND',
-      description: 'Каталог коры с понятными фракциями, доставкой и корзиной.',
-      image: 'assets/portfolio/kora.png',
-      alt: 'Первый экран интернет-магазина KORA RND',
-      url: 'case-kora.html',
-      link: 'Смотреть кейс',
-      mark: 'LIVE / 01'
+    aho: {
+      meta: 'Web-приложение · закупки и расходы',
+      title: 'АХО',
+      description: 'Заявки, каталоги, бюджеты филиалов и складов. Подробный разбор 18 страниц приложения.',
+      image: 'assets/portfolio/aho/dashboard.webp',
+      alt: 'Главная АХО с демонстрационными данными',
+      url: 'case-aho.html',
+      link: 'Разобрать все экраны',
+      mark: 'WEB APP / 04'
     },
     palitra: {
       meta: 'Лендинг услуг · 2026',
@@ -52,14 +52,14 @@
       mark: 'LIVE / 02'
     },
     dkmoto: {
-      meta: 'Интернет-магазин · мототовары',
+      meta: 'Интернет-магазин · эндуро',
       title: 'DK<br>MOTO',
-      description: 'Каталог мототоваров и сценарий заказа. Публичное превью защищено авторизацией.',
-      image: 'assets/portfolio/dkmoto.svg',
-      alt: 'Концепт-превью интернет-магазина DKMOTO',
+      description: 'Эндуро-мотоциклы и экипировка: каталог, характеристики и обращение к специалисту.',
+      image: 'assets/portfolio/dkmoto-home.png',
+      alt: 'Первый экран интернет-магазина DKMoto',
       url: 'case-dkmoto.html',
       link: 'Смотреть кейс',
-      mark: 'CONCEPT / 03'
+      mark: 'LIVE / 01'
     },
     pride: {
       meta: 'Корпоративный сайт · реклама',
@@ -69,7 +69,7 @@
       alt: 'Первый экран сайта рекламного агентства Agency Pride',
       url: 'case-pride.html',
       link: 'Смотреть кейс',
-      mark: 'LIVE / 04'
+      mark: 'LIVE / 03'
     }
   };
   const projectStage = document.querySelector('#projectStage');
